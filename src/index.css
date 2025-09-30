@@ -1,0 +1,110 @@
+body{
+  margin:0;
+  background-color: rgba(7, 52, 7, 0.631);
+}
+.login-icon{
+  height: 3rem;
+  width: 2rem;
+}
+.news-container {
+  margin:0;
+  padding: 1rem;
+  background-image: url(assets/nav-background.jpg);
+  display: flex;
+  justify-content:center;
+}
+.news{
+  padding: 0.5rem 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:rgb(97, 220, 210);
+  background-color: rgba(0, 0, 0, 0.786);
+  border-radius: 30px;
+}
+
+.nav{
+  color:white;
+  background-color: rgb(152, 9, 9);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 1rem;
+}
+.nav ul{
+  padding: 0;
+  margin:0 ;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+.nav a{
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.nav li:hover{
+  background-color: rgb(109, 12, 12);
+  border-radius: 5px;
+}
+.site-title{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.card{
+  margin: 2rem 0.5rem;
+  height: auto;
+  width: auto;
+  padding: 0 2rem;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-title{
+  color: white;
+  font-family: Arial,sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align:center;
+}
+.card-image{
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+}
+.card p{
+  margin: 0.5rem;
+  color: white;
+  font-family: Arial,sans-serif;
+  font-size: 1rem;
+  text-align:center;
+}
+.card-input {
+  width: 2.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.card-button {
+  margin: 0.2rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: rgb(94, 213, 58);
+  font-size: 1rem;
+  color: black;
+}
+.card-button:hover {
+  background-color: rgb(46, 138, 34);
+  color: white;
+  cursor: pointer;
+}
+.card-container {
+  display: flex;
+} 
