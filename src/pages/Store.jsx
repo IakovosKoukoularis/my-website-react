@@ -1,11 +1,11 @@
 import ProductCard from "../components/ProductCard";
+import StoreBar from "../components/StoreBar";
 
 function Store() {
     return (
         <div>
-            <h1>Store</h1>
+            <StoreBar />
             <div className="card-container">
-                <ProductCard />
                 <ProductCard />
                 <ProductCard />
             </div>

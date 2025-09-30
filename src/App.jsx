@@ -13,6 +13,7 @@ function App() {
 
   return (
     <>
+      <NewsBar />
       <NavBar />
       <div className="container">
         <Routes>
@@ -22,12 +23,7 @@ function App() {
           <Route path="/store" element={<Store />} />
         </Routes>
       </div>
-      {/* <NewsBar />
-      <div className="card-container">
-        <Card />
-        <Card />
-        <Card />
-      </div> */}
+      
     </>
   )
 }
