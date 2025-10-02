@@ -9,9 +9,11 @@ body{
 .news-container {
   margin:0;
   padding: 1rem;
-  background-image: url(assets/nav-background.jpg);
+  background-image: url(assets/news-background.jpg);
+  background-size: cover;
   display: flex;
   justify-content:center;
+  
 }
 .news{
   padding: 0.5rem 1rem;
@@ -48,6 +50,10 @@ body{
   padding: 0.5rem;
 }
 .nav li:hover{
+  background-color: rgb(109, 12, 12);
+  border-radius: 5px;
+}
+.active{
   background-color: rgb(109, 12, 12);
   border-radius: 5px;
 }
@@ -126,4 +132,22 @@ body{
   margin-left: 1rem;
   height: 1.5rem;
   width: 1.5rem;
+}
+.page-container{
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  font-family: Arial, sans-serif;
+  font-size : 1.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-container h1{
+  color: white;
+  font-size: 2rem;
+  background-color: green;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
 }

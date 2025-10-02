@@ -1,4 +1,4 @@
-import { Link} from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function NavBar() {
 
@@ -8,15 +8,9 @@ export default function NavBar() {
         <nav className="nav">
             <Link to="/" className="site-title">Poke Valley</Link>
             <ul>
-                <li>
-                    <CustomLink to="/store">Store</CustomLink>
-                </li>
-                <li>
-                    <CustomLink to="/about">About</CustomLink>
-                </li>
-                <li>
-                    <CustomLink to="/contact">Contact</CustomLink>
-                </li>
+                <CustomLink to="/store">Store</CustomLink>
+                <CustomLink to="/about">About</CustomLink>
+                <CustomLink to="/contact">Contact</CustomLink>
                 <img src={!loggedIn ?"login-icon.png" : "logged-in.png"} alt="" className="login-icon"/>
             </ul>
         </nav>
@@ -24,9 +18,11 @@ export default function NavBar() {
 }
 
 function CustomLink( { to, children, ...props } ) {
-    const path = window.location.pathname;
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true }); // entire path must march end: true
+
     return (
-        <li className={path === to ? "active" : ""}>
+        <li className={isActive ? "active" : ""}>
             <Link to={to} {...props}>
                 {children}
             </Link>
