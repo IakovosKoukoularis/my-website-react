@@ -2,10 +2,6 @@ body{
   margin:0;
   background-color: rgba(7, 52, 7, 0.631);
 }
-.login-icon{
-  height: 2.5rem;
-  width: 2.5rem;
-}
 .news-container {
   margin:0;
   padding: 1rem;
@@ -53,6 +49,15 @@ body{
   background-color: rgb(109, 12, 12);
   border-radius: 5px;
 }
+.login-icon{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.login-icon:hover{
+  cursor: pointer;
+  background-color: rgb(109, 12, 12);
+  border-radius: 50%;
+}
 .active{
   background-color: rgb(109, 12, 12);
   border-radius: 5px;
@@ -82,7 +87,7 @@ body{
   text-align:center;
 }
 .card-image{
-  border: 1px solid black;
+  border: none;
   height: 200px;
   width: 200px;
 }
@@ -150,4 +155,52 @@ body{
   border: none;
   border-radius: 30px;
   padding: 0.5rem 1rem;
+}
+body.active-modal{
+  overflow-y: hidden;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal, .overlay{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.register-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
 }

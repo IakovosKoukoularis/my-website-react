@@ -4,9 +4,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Store from "./pages/Store";
+import Register from "./pages/Register";
 
 import NewsBar from "./components/NewsBar";
-import Card from "./components/ProductCard";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -21,9 +21,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/store" element={<Store />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
-      
     </>
   )
 }

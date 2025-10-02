@@ -1,8 +1,8 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import Modal from "./Modal";
 
-export default function NavBar() {
 
-    const loggedIn = false;
+export default function NavBar(){
 
     return(
         <nav className="nav">
@@ -10,8 +10,14 @@ export default function NavBar() {
             <ul>
                 <CustomLink to="/store">Store</CustomLink>
                 <CustomLink to="/about">About</CustomLink>
-                <CustomLink to="/contact">Contact</CustomLink>
-                <img src={!loggedIn ?"login-icon.png" : "logged-in.png"} alt="" className="login-icon"/>
+                <CustomLink to="/contact">Contact</CustomLink>  
+                <Modal customButton={<img src="login-icon.png" alt="" className="login-icon"/>}>
+                    <h1>Login</h1>
+                    <input type="text" placeholder="Username"></input>
+                    <input type="password" placeholder="Password"></input>
+                    <button>Submit</button>
+                    <Link to="/register">Don't have an account? Register</Link>
+                </Modal>
             </ul>
         </nav>
     );
