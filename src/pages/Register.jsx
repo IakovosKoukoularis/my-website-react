@@ -1,6 +1,7 @@
-
+import { Link } from "react-router-dom";
 
 function Register() {
+
     return (
         <div className="page-container">
             <h1>Register</h1>
@@ -8,10 +9,10 @@ function Register() {
             <form className="register-form">
                 <input type="text" placeholder="Username"></input>
                 <input type="email" placeholder="Email"></input>
-                <input type="number" placeholder="Phone Number"></input>
+                <input type="text" placeholder="Phone Number"></input>
                 <input type="password" placeholder="Password"></input>
                 <input type="password" placeholder="Confirm Password"></input>
-                <button>Submit</button>
+                <button><Link to="/" className="register-submit">submit</Link></button>
             </form>
         </div>
     );

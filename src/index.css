@@ -204,3 +204,7 @@ body.active-modal{
   gap: 0.5rem;
   width: 50%;
 }
+.register-submit{
+  color: black;
+  text-decoration: none;
+}

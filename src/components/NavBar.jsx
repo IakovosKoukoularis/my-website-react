@@ -4,6 +4,8 @@ import Modal from "./Modal";
 
 export default function NavBar(){
 
+    const customButton = <img src="login-icon.png" alt="" className="login-icon"/>;
+
     return(
         <nav className="nav">
             <Link to="/" className="site-title">Poke Valley</Link>
@@ -11,13 +13,7 @@ export default function NavBar(){
                 <CustomLink to="/store">Store</CustomLink>
                 <CustomLink to="/about">About</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>  
-                <Modal customButton={<img src="login-icon.png" alt="" className="login-icon"/>}>
-                    <h1>Login</h1>
-                    <input type="text" placeholder="Username"></input>
-                    <input type="password" placeholder="Password"></input>
-                    <button>Submit</button>
-                    <Link to="/register">Don't have an account? Register</Link>
-                </Modal>
+                <Modal customButton={customButton}></Modal>
             </ul>
         </nav>
     );
