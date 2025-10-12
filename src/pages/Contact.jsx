@@ -1,3 +1,5 @@
+import "../styles/PagesStyle.css";
+
 function Contact() {
     return (
         <div className="page-container">

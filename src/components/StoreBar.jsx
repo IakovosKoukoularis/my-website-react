@@ -1,5 +1,4 @@
-
-
+import "../styles/StoreBar.css";
 
 function StoreBar() {
   return (

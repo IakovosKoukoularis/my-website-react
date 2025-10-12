@@ -1,6 +1,6 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import Modal from "./Modal";
-
+import Modal from "./Modal.jsx";
+import "../styles/NavBar.css";
 
 export default function NavBar(){
 

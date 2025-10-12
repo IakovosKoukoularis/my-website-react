@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import "../styles/ProductCard.css";
 
 function Card({ title='Test Title', description='This is a short description', cost="10", imageUrl="login-icon.png" }){
     const [qty, setQty] = useState(1);
@@ -9,7 +9,7 @@ function Card({ title='Test Title', description='This is a short description', c
     }
 
     function handleAddToCart(){
-        console.log(`Added ${qty} of ${title} to cart.`);
+        alert(`Added ${qty} of ${title} to cart.`);
     }
 
     return( <div className="card">

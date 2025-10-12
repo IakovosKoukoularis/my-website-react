@@ -1,4 +1,4 @@
-
+import "../styles/NewsBar.css";
 
 function NewsBar() {
     const news='Latest News';

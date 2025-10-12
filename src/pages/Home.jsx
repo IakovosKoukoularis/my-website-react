@@ -1,3 +1,5 @@
+import "../styles/PagesStyle.css";
+
 function Home() {
     return (
         <div className="page-container">

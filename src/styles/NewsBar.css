@@ -1,0 +1,18 @@
+.news-container {
+  margin:0;
+  padding: 1rem;
+  background-image: url(news-background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content:center;
+  
+}
+.news{
+  padding: 0.5rem 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:rgb(97, 220, 210);
+  background-color: rgba(0, 0, 0, 0.786);
+  border-radius: 30px;
+}
