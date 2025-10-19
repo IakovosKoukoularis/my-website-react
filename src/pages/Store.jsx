@@ -7,8 +7,9 @@ function Store() {
         <div>
             <StoreBar />
             <div className="card-container">
-                <ProductCard />
-                <ProductCard />
+                <ProductCard title="White Flare ETB" imageUrl="shopping.jpeg"/>
+                <ProductCard imageUrl="shopping-1.jpeg"/>
+                <ProductCard/>
             </div>
         </div>
     );
