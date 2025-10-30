@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import "../styles/Modal.css";
+import "../styles/LoginModal.css";
 
-function Modal({customButton, children}) {
+function LoginModal({customButton, children}) {
 
     const [modal, setModal] = useState(false);
 
@@ -43,4 +43,4 @@ function Modal({customButton, children}) {
     );
 }
 
-export default Modal;
+export default LoginModal;

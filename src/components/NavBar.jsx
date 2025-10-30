@@ -1,5 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import Modal from "./Modal.jsx";
+import LoginModal from "./LoginModal.jsx";
 import "../styles/NavBar.css";
 
 export default function NavBar(){
@@ -13,7 +13,7 @@ export default function NavBar(){
                 <CustomLink to="/store">Store</CustomLink>
                 <CustomLink to="/about">About</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>  
-                <Modal customButton={customButton}></Modal>
+                <LoginModal customButton={customButton}></LoginModal>
             </ul>
         </nav>
     );
