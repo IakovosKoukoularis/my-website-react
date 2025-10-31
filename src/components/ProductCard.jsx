@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import CartModal from "./CartModal";
 import "../styles/ProductCard.css";
 
 function Card({ key='',title='Test Title', description='This is a short description', cost="10", imageUrl="coming-soon.png" }){

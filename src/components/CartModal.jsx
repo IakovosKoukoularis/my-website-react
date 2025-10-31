@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import ProductCard from "./ProductCard";
 import "../styles/CartModal.css";
 
 function CartModal({customButton, children}) {
@@ -10,6 +11,8 @@ function CartModal({customButton, children}) {
         setCart(!cart);
     }
 
+    let cartValue = 0;
+
     return (
         <> 
             <div onClick={toggleCart}>{customButton}</div>
@@ -17,20 +20,19 @@ function CartModal({customButton, children}) {
                 <div className="cart">
                     <div className="cart-overlay" onClick={toggleCart}></div>
                     <div className="cart-content">
-                        <h1>Your Cart</h1>
+                        <h1 className="cart-title">Cart</h1>
                         {cartList.length > 0 ? cartList.map(item => (
-                            <div key={item.title}>
-                                <p className="cart-item-title">{item.title}</p>
-                                <p>Quantity: {item.quantity}</p>
-                                <p>Cost: ${item.quantity * item.cost}</p>
+                            cartValue = cartValue + Number(item.quantity) * Number(item.cost),
+                            <div className="item-content">
+                                <p>{item.quantity} of {item.title}: ${item.quantity * item.cost}</p>
+                                <button className="item-button">delete</button>    
                             </div>
                         )) : <p>Your cart is empty.</p>}
+                        <p>Total:${cartValue}</p>
                     </div>
                 </div>
-            ) : null}
-            
-        </>
-    );
+            ) : null} 
+        </>);
 }
 
 export default CartModal;

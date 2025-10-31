@@ -18,9 +18,10 @@
     bottom: 0;
     right: 0;
     background-color: rgba(210, 210, 210, 0.869);
-    border-radius: 40px 0 0 0;
+    border: 1px solid black;
+    border-radius: 30px 0 0 0;
     color: rgba(0, 0, 0, 0.58);
-    padding: 2rem;
+    padding: 0 2rem;
     height: 100%;
     width: 150px;
     display: flex;
@@ -31,27 +32,24 @@
 .cart-content:hover {
     background-color: rgb(207, 207, 207);
     color: black;
-    transition: background-color 1s ease;
+    transition: background-color 0.3s ease;
 }
-.cart-content h1{
+.cart-title{
     font-family: Arial, sans-serif;
     font-weight: bold;
-    margin-top: 0;
+    font-size: 2rem;
+    border: none;
+    padding-top: 0.2rem ;
+    margin: 0.2rem 0;
 }
-.cart-content p{
-    margin-top: 0;
-    font-family: Arial, sans-serif;
-    font-size: 0.9rem;
+.item-content{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.cart-item-title{
-    font-weight: bold;
-    border: 1px solid black;
-    padding: 0.5rem;
-    border-radius: 0 0 30px 30px;
-}
-.cart-content div{
-    margin-bottom: 0.3rem;
-    border: 1px solid black;
-    border-radius: 30px 0 30px 0;
-    padding: 0 2rem;
+.item-button{
+    background-color: rgba(70, 10, 10, 0.48);
+    border-radius: 10px;
 }

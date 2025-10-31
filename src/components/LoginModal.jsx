@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
+import users from "../data/users.json";
 import "../styles/LoginModal.css";
 
 function LoginModal({customButton, children}) {
@@ -23,6 +24,16 @@ function LoginModal({customButton, children}) {
         setPassword(event.target.value);
     }
 
+    function handleLogin()  {
+        if (username === "" || password === "") {
+            alert("Please fill both to continue");
+            return;
+        }
+        const userFound = users.find(
+        (user) => user.username === username && user.password === password);
+        userFound ? (toggleModal(), alert(`Welcome back, ${username}!`)) : alert(`Wrong username or password`);
+    }
+
     return (
         <>  
             <div onClick={toggleModal}>{customButton}</div>
@@ -33,7 +44,7 @@ function LoginModal({customButton, children}) {
                     <h1>Login</h1>
                     <input type="text" placeholder="Username" onChange={handleUsername}></input>
                     <input type="password" placeholder="Password" onChange={handlePassword}></input>
-                    <button className="close-modal" onClick={username && password ? toggleModal: () =>alert("Please fill both to continue")}>submit</button>
+                    <button className="close-modal" onClick={handleLogin}>submit</button>
                     <Link to="/register" onClick={toggleModal}>Don't have an account? Register</Link>
                 </div>
             </div>
