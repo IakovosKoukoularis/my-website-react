@@ -4,7 +4,7 @@ import "../styles/NavBar.css";
 
 export default function NavBar(){
 
-    const customButton = <img src="login-icon.png" alt="" className="login-icon"/>;
+    const imageButton = <img src="login-icon.png" alt="" className="login-icon"/>;
 
     return(
         <nav className="nav">
@@ -13,7 +13,7 @@ export default function NavBar(){
                 <CustomLink to="/store">Store</CustomLink>
                 <CustomLink to="/about">About</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>  
-                <LoginModal customButton={customButton}></LoginModal>
+                <LoginModal customButton={imageButton}></LoginModal>
             </ul>
         </nav>
     );
