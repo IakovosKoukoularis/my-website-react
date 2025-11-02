@@ -37,7 +37,7 @@ function LoginModal({customButton, children}) {
     return (
         <>  
             <div onClick={toggleModal}>{customButton}</div>
-            {modal ? (
+            {modal ?(
                 <div className="modal">
                 <div className="overlay" onClick={toggleModal}></div>
                 <div className="modal-content">
