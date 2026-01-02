@@ -1,16 +1,33 @@
-# React + Vite
+## my-website-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="482" height="451" alt="my-website" src="https://github.com/user-attachments/assets/afbec483-de84-453e-8830-bbdc034ee088" />
 
-Currently, two official plugins are available:
+## 📖 About
+An fully responsive e-shop that was made in order for me to learn react. Built with **React** and **Vite** for optimal performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 **Live Demo:** https://iakovos-portfolio.netlify.app
 
-## React Compiler
+## 🛠️ Tech Stack
+* **Build Tool:** Vite ⚡
+* **Frontend:** React.js, CSS3
+* **State Management:** React Hooks (useState, useEffect)
+* **Tools:** VS Code, Git
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+* ✅ Blazing fast loading times (powered by Vite)
+* ✅ Fully Responsive Design (Desktop)
+* ✅ With User Login & Register
+* ✅ Fully Responsive Store Page
 
-## Expanding the ESLint configuration
+## 🚀 How to Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/IakovosKoukoularis/](https://github.com/IakovosKoukoularis/)[my-website-react].git
+
+📫 Contact
+Created by Iakovos Koukoularis
+
+LinkedIn: linkedin.com/in/jack-koukoularis
+
+GitHub: github.com/IakovosKoukoularis
