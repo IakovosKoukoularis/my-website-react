@@ -1,12 +1,11 @@
-# [my-website-react] 
+## my-website-react
 
-![Project Screenshot]([<img width="482" height="451" alt="my-website" src="https://github.com/user-attachments/assets/afbec483-de84-453e-8830-bbdc034ee088" />
-])
+<img width="482" height="451" alt="my-website" src="https://github.com/user-attachments/assets/afbec483-de84-453e-8830-bbdc034ee088" />
 
 ## 📖 About
 An fully responsive e-shop that was made in order for me to learn react. Built with **React** and **Vite** for optimal performance.
 
-👉 **Live Demo:** (https://iakovos-portfolio.netlify.app)
+👉 **Live Demo:** https://iakovos-portfolio.netlify.app
 
 ## 🛠️ Tech Stack
 * **Build Tool:** Vite ⚡
