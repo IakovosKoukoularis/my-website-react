@@ -27,7 +27,7 @@ export default function StoreBar() {
 
   function handleAddToCart(product){
     const {id, title, quantity, cost} = product;
-    alert(product);
+    alert(`${title} added to cart!`);
 
     setCartList(prev => {
         const exists = prev.some(item => item.id === id);

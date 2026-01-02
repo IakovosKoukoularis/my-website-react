@@ -30,7 +30,7 @@ function LoginModal({customButton, children}) {
             return;
         }
         const userFound = users.find(
-        (user) => user.username === username && user.password === password);
+        (user) => user.username.toLowerCase() === username.toLowerCase() && user.password === password);
         userFound ? (toggleModal(), alert(`Welcome back, ${username}!`)) : alert(`Wrong username or password`);
     }
 

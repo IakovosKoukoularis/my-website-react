@@ -21,5 +21,27 @@
     "description": "This is the third item.",
     "cost": 39.99,
     "imageUrl": "coming-soon.png"
+    },
+    {
+    "id": 4,
+    "title": "Item Four",
+    "description": "This is the forth item.",
+    "cost": 14.99,
+    "imageUrl": "coming-soon.png"
+    },
+    {
+    "id": 5,
+    "title": "Item Five",
+    "description": "This is the fifth item.",
+    "cost": 9.99,
+    "imageUrl": "coming-soon.png"
+    },
+    {
+    "id": 6,
+    "title": "Item Six",
+    "description": "This is the sixth item.",
+    "cost": 89.99,
+    "imageUrl": "coming-soon.png"
     }
 ]
+
