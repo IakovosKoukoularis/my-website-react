@@ -1,6 +1,5 @@
 ## my-website-react
 
-<img width="482" height="451" alt="my-website" src="https://github.com/user-attachments/assets/afbec483-de84-453e-8830-bbdc034ee088" />
 <img width="1470" height="746" alt="my-website-react" src="https://github.com/user-attachments/assets/eae5ecc2-515d-440d-a4a7-c589b0a721cc" />
 
 ## 📖 About
