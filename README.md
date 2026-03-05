@@ -23,8 +23,7 @@ An fully responsive e-shop that was made in order for me to learn react. Built w
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/IakovosKoukoularis/](https://github.com/IakovosKoukoularis/)[my-website-react].git
-
+   git clone https://github.com/IakovosKoukoularis/my-website-react.git
 📫 Contact
 Created by Iakovos Koukoularis
 
